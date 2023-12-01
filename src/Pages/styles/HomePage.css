@@ -2,4 +2,22 @@
 
 html{
     font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home_header{
+    height: 100vh;
+    width: 9rem;
+    background-color: #424242;
+}
+.home_nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    line-height: 8;
+    width: 9rem;
+    height: 100vh;
 }
