@@ -1,14 +1,20 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./styles/HomePage.css"
 import { Link } from 'react-router-dom'
 
 const HomePage = () => {
     const [text, setText] = useState("Cesar Montes")
     
-    setTimeout(() => {
-        setText("Desarrollador Web Full Stack")
-    }, 3000)
-
+    useEffect(() => {
+        const timer = setTimeout(() => {
+          setText("Desarrollador Web Full Stack");
+          const resetTimer = setTimeout(() => {
+            setText("Cesar Montes");
+          }, 3000); // Tiempo para resetear el estado después del cambio
+          return () => clearTimeout(resetTimer); // Limpiar el timer al desmontar el componente
+        }, 3000); // Tiempo para cambiar el estado inicial
+        return () => clearTimeout(timer); // Limpiar el timer al desmontar el componente
+      }, [text]);
     return (
         <section className='homepage_class'>
             <article className='homepage_header'>
