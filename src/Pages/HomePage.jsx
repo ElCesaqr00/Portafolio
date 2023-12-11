@@ -33,7 +33,12 @@ const HomePage = () => {
                 y funcionales. Mis habilidades incluyen <span className='hompage_strong'>HTML, CSS, JavaScript, Node.js y bases de datos como MongoDB.</span> Siempre estoy al día con las últimas 
                 tendencias para ofrecer soluciones modernas y efectivas.</p>
                 </article>
-                <article className='homepage_contact'></article>
+                <article className='homepage_contact'>
+                    <a href="https://github.com/ElCesaqr00" target='_blank'><img className='icon_social' src="/public/Social_Media/github.png" alt="" /></a>
+                    <a href="mailto:cesarmontes0842@gmail.com" target='_blank'><img className='icon_social' src="/public/Social_Media/gmail.png" alt="" /></a>
+                    <a href="https://www.linkedin.com/in/cesar-david-montes-serna-b62724262/" target='_blank'><img className='icon_social' src="/public/Social_Media/linkedin.png" alt="" /></a>
+                    <a href="https://wa.me/3235289093" target='_blank'><img className='icon_social' src="/public/Social_Media/whatsapp.png" alt="" /></a>
+                </article>
             </article>
         </section>
     )

@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dhurjati&family=Lato:wght@300;400;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+.ProjectPage_header {
+  display: block;
+  max-width: 100%;
+  justify-content: center;
+  background-color: rgb(138, 83, 247);
+}
+
+.ProjectPage_nav {
+  display: flex;
+  justify-content: center;
+}
+
+.ProjectPage_list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  gap: 50px;
+}
+
