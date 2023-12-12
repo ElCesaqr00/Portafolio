@@ -10,11 +10,12 @@ const HomePage = () => {
           setText("Desarrollador Web Full Stack");
           const resetTimer = setTimeout(() => {
             setText("Cesar Montes");
-          }, 3000); // Tiempo para resetear el estado después del cambio
-          return () => clearTimeout(resetTimer); // Limpiar el timer al desmontar el componente
-        }, 3000); // Tiempo para cambiar el estado inicial
-        return () => clearTimeout(timer); // Limpiar el timer al desmontar el componente
+          }, 3000);
+          return () => clearTimeout(resetTimer);
+        }, 3000);
+        return () => clearTimeout(timer);
       }, [text]);
+
     return (
         <section className='homepage_class'>
             <article className='homepage_header'>
