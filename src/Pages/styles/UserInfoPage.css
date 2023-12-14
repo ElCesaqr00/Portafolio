@@ -73,6 +73,7 @@ input[type=radio]{
   right: 0;
   margin: auto;
   cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 img {
@@ -89,4 +90,16 @@ img {
   z-index: 0;
 }
 
+#img3:checked ~ .card #selector-1,
+#img1:checked ~ .card #selector-2,
+#img2:checked ~ .card #selector-3{
+  transform: translateX(-40%) scale(0.8);
+  z-index: 0;
+}
+#img1:checked ~ .card #selector-1,
+#img2:checked ~ .card #selector-2,
+#img3:checked ~ .card #selector-3{
+  transform: translateX(-40%) scale(0.8);
+  z-index: 1;
+}
 /* queda pendientes cosas */
