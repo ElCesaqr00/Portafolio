@@ -2,14 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Dhurjati&family=Lato:wght@300;400;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.Project{
-    background-color: black;
-    height: 100vh;
+
+.Project {
+  background-color: black;
+  height: 100vh;
 }
 
 .User_header {
@@ -34,3 +35,58 @@
   list-style: none;
   gap: 50px;
 }
+
+.slider-container {
+  max-width: 1000px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+input[type=radio]{
+  display: none;
+}
+.info-container {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  max-height: 600px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+#img2:checked ~ .card #selector-1,
+#img1:checked ~ .card #selector-3,
+#img3:checked ~ .card #selector-2{
+  transform: translateX(-40%) scale(0.8);
+  z-index: 0;
+}
+
+/* queda pendientes cosas */
