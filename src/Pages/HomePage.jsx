@@ -23,9 +23,9 @@ const HomePage = () => {
                     <nav className='homepage_nav'>
                         <ul className='homepage_list'>
                             <li className='list_page'><Link className="list" to="/">Home</Link></li>
-                            <li><Link className="list" to="/ProjectPage">Projects</Link></li>
-                            <li><Link className="list" to="/UserInfoPage">About me</Link></li>
-                            <li><Link className="list" to="/Contact">Contact</Link></li>
+                            <li className='list_page'><Link className="list" to="/ProjectPage">Projects</Link></li>
+                            <li className='list_page'><Link className="list" to="/UserInfoPage">About me</Link></li>
+                            <li className='list_page'><Link className="list" to="/Contact">Contact</Link></li>
                         </ul>
                     </nav>
                 </header>
@@ -35,7 +35,7 @@ const HomePage = () => {
                     <h1 className='homepage_title'>{text}</h1>
                 </article>
                 <article className='homepage_icons'>
-                <p className='homepage_text'><span className="hompage_strong">Hola! </span>soy Cesar Montes, 
+                <p className='homepage_text'>Hola! <span className="hompage_strong">soy Cesar Montes</span>, 
                 un desarrollador web apasionado por crear sitios web atractivos
                 y funcionales. Mis habilidades incluyen <span className='hompage_strong'>HTML, CSS, JavaScript, Node.js y bases de datos como MongoDB.</span> Siempre estoy al día con las últimas 
                 tendencias para ofrecer soluciones modernas y efectivas.</p>
